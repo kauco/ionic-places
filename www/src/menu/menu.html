@@ -1,0 +1,21 @@
+<ion-side-menus>
+  <!-- Left menu -->
+  <ion-side-menu side="right">
+    <h2>Hello Ionic</h2>
+    <hr />
+    <button menu-toggle="right" ui-sref="login" class="button button-assertive">
+      logout
+    </button>
+
+    
+  </ion-side-menu>
+
+  <ion-side-menu-content>
+  <ng-include src="'src/header/header.html'" ng-controller="HeaderCtrl"></ng-include>
+
+  hello
+  <ng-include src="'src/tabs/tabs.html'"></ng-include>
+  </ion-side-menu-content>
+
+
+</ion-side-menus>

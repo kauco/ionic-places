@@ -4,7 +4,7 @@ angular.module('places')
 	.controller('HeaderCtrl', function($rootScope,$scope,$state) {
 
 		//properties
-		$scope.enabled = false;
+		$scope.enabled = true;
 		$scope.title = "";
 
 		//events
