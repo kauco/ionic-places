@@ -3,7 +3,9 @@ angular.module('places')
 
 
 		$scope.login=function(){
-			LoginService.login();
+			LoginService.login($scope.email,$scope.password).then(function(){
+				console.log("success");
+			});
 		};
 
 
@@ -21,7 +23,6 @@ angular.module('places')
 				$scope.modal.show();
 			});
 		}
-
 
 	});
 
