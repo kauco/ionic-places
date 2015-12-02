@@ -4,8 +4,8 @@
           A
       </div>
 
-      <a class="item" href="#">
-          Alhan
+      <a class="item"  collection-repeat=" friend in friends" href="#">
+          <p>{{friend.name}}</p>
       </a>
   </ion-content>
 </ion-view>
